@@ -47,7 +47,7 @@ def main():
 
     print(data_json["cnt"])
 
-    url = "http://api.brainshop.ai/get?bid=163895&key=ABQ0CBtuso2xytlX&uid=[001]&msg=[Msg]"
+    url = "http://api.brainshop.ai/get?bid=[bid]key=[brainshop key]uid=[001]&msg=[Msg]"
     voices = speaker.getProperty('voices')
     speaker = pyttsx3.init()
     speaker.setProperty('voice', voices[1].id)
